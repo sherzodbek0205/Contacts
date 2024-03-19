@@ -40,12 +40,12 @@ function List({ contacts, toggleFavorite, deleteContact, editContact }) {
 
   const handleDelete = id => {
     deleteContact(id);
-    setEditingContact(null); // Clear editing state after deleting a contact
+    setEditingContact(null); 
   };
 
   const handleToggleFavorite = id => {
     toggleFavorite(id);
-    setEditingContact(null); // Clear editing state after toggling favorite
+    setEditingContact(null);
   };
 
   const columns = [

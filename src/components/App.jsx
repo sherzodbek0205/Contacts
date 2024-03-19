@@ -23,7 +23,7 @@ function App() {
     const id = uuidv4();
     const createdAt = new Date();
     setContacts([...contacts, { ...newContact, id, createdAt }]);
-    setShowForm(false); // Closing the form after adding the contact
+    setShowForm(false);
   };
 
   const deleteContact = id => {
